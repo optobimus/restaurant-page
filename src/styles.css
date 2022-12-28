@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Roboto&display=swap');
 
 html {
     height: 100%;
@@ -41,6 +41,11 @@ ul {
     padding: 0px;
 }
 
+li:hover {
+    cursor: pointer;
+    color: #C59D5F;
+}
+
 .main {
     padding: 20px;
     display: flex;
@@ -50,21 +55,25 @@ ul {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
-    margin: 150px 0px;
-
+    margin: 10% 150px;
+    width: minmax(450px, 1000px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 .paragraph {
-    width: 450px;
+    padding: 20px;
     text-align: center;
     color: black;
+    margin-bottom: 20px;
 }
 
 .name {
-    color: black;
+    color: #C59D5F;
+    text-shadow: black 1px 0 15px;
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 6em;
 }
 
 .button {
@@ -74,14 +83,29 @@ ul {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.125);
     cursor: pointer;
     background-color: #C59D5F;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    /* hover styles for the button */
+    background-color: #A57C3F;;
 }
 
 .welcome {
     font-size: 2em;
 }
+
 h1 {
     margin: 8px;
     font-size: 4em;
+}
+
+.border {
+    margin: 20px auto;
+    background-color: #C59D5F;
+    width: 80%;
+    height: 5px;
 }
 
 .footer {
