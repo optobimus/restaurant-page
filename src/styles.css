@@ -46,17 +46,22 @@ li:hover {
     color: #C59D5F;
 }
 
+.mainContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
 .main {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     margin: 10% 150px;
-    width: minmax(450px, 1000px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
@@ -118,4 +123,25 @@ h1 {
     color: white;
 }
 
+/* MENU */
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.menuItem {
+    width: 200px;
+}
+.menuImage {
+    height: auto;
+    width: 180px;
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+}
