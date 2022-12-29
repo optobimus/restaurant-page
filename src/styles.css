@@ -71,7 +71,7 @@ li:hover {
     padding: 20px;
     text-align: center;
     color: black;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .name {
@@ -102,8 +102,15 @@ li:hover {
 }
 
 h1 {
-    margin: 8px;
-    font-size: 4em;
+    margin: 0px;
+    color: #C59D5F;
+    text-shadow: black 1px 0 15px;
+    font-family: "Herr Von Muellerhoff";
+    font-size: 6em;
+}
+
+h1 .aboutTitle {
+    margin-top: 20px;
 }
 
 .border {
@@ -144,4 +151,11 @@ h1 {
 .menuTitle {
     display: flex;
     justify-content: center;
+}
+
+/* ABOUT */
+
+.aboutImage {
+    width: 80%;
+    margin-bottom: 40px;
 }

@@ -1,6 +1,7 @@
 import './styles.css';
 import index from './home';
-import menu from './menu'
+import menu from './menu';
+import about from './about';
 
 const content = document.querySelector(".content");
 let menuBtn, homeBtn, aboutBtn;
@@ -16,6 +17,7 @@ function createHeader () {
     nav2.addEventListener("click", createMenu);
     nav2.classList.add("menuBtn");
     const nav3 = document.createElement("li");
+    nav3.addEventListener("click", createAbout);
     nav3.classList.add("aboutBtn");
 
     nav1.textContent = "HOME";
@@ -63,19 +65,30 @@ function createHome() {
     homeBtn = document.querySelector(".homeBtn");
     menuBtn = document.querySelector(".menuBtn");
     aboutBtn = document.querySelector(".aboutBtn");
+    console.log("Home");
     content.appendChild(index());
-    
     createFooter();
 }
 
-function createMenu(){
+function createMenu() {
     content.innerHTML = "";
     createHeader();
     homeBtn = document.querySelector(".homeBtn");
     menuBtn = document.querySelector(".menuBtn");
     aboutBtn = document.querySelector(".aboutBtn");
+    console.log("Menu");
     content.appendChild(menu());
-    console.log("Click");
+    createFooter();
+}
 
+function createAbout() {
+    content.innerHTML = "";
+    createHeader();
+    homeBtn = document.querySelector(".homeBtn");
+    menuBtn = document.querySelector(".menuBtn");
+    aboutBtn = document.querySelector(".aboutBtn");
+    console.log("About");
+    content.appendChild(about());
+    console.log("Click");
     createFooter();
 }
