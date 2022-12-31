@@ -4,7 +4,6 @@ import menu from './menu';
 import about from './about';
 
 const content = document.querySelector(".content");
-let menuBtn, homeBtn, aboutBtn;
 function createHeader () {
     const header = document.createElement("div");
     header.classList.add("header");
@@ -52,9 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     content.appendChild(index());
     
     createFooter();
-    homeBtn = document.querySelector(".homeBtn");
-    menuBtn = document.querySelector(".menuBtn");
-    aboutBtn = document.querySelector(".aboutBtn");
 
 
 });
@@ -62,21 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function createHome() {
     content.innerHTML = "";
     createHeader();
-    homeBtn = document.querySelector(".homeBtn");
-    menuBtn = document.querySelector(".menuBtn");
-    aboutBtn = document.querySelector(".aboutBtn");
-    console.log("Home");
     content.appendChild(index());
     createFooter();
 }
 
-function createMenu() {
+export function createMenu() {
     content.innerHTML = "";
     createHeader();
-    homeBtn = document.querySelector(".homeBtn");
-    menuBtn = document.querySelector(".menuBtn");
-    aboutBtn = document.querySelector(".aboutBtn");
-    console.log("Menu");
     content.appendChild(menu());
     createFooter();
 }
@@ -84,11 +72,6 @@ function createMenu() {
 function createAbout() {
     content.innerHTML = "";
     createHeader();
-    homeBtn = document.querySelector(".homeBtn");
-    menuBtn = document.querySelector(".menuBtn");
-    aboutBtn = document.querySelector(".aboutBtn");
-    console.log("About");
     content.appendChild(about());
-    console.log("Click");
     createFooter();
 }
